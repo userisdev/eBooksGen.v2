@@ -32,7 +32,7 @@ namespace eBooksGen.Libs
                 using XImage ximg = XImage.FromFile(path);
 
                 PdfPage page = doc.AddPage();
-                page.Size = bmp.Height >= bmp.Width ? PageSize.B5 : PageSize.B4;
+                page.Size = PageSize.B5;
                 page.Orientation = bmp.Height >= bmp.Width ? PageOrientation.Portrait : PageOrientation.Landscape;
 
                 double ratioW = page.Width / bmp.Width;
