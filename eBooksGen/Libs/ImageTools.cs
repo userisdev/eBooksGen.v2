@@ -22,7 +22,7 @@ namespace eBooksGen.Libs
             canvas.DrawBitmap(resized, 0, 0);
 
             using SKImage img = surface.Snapshot();
-            using SKData tmp = img.Encode(SKEncodedImageFormat.Jpeg, 90);
+            using SKData tmp = img.Encode(SKEncodedImageFormat.Jpeg, 75);
 
             if (File.Exists(dstPath))
             {
